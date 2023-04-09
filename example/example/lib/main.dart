@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_tindercard/flutter_tindercard.dart';
 
@@ -35,7 +37,7 @@ class _ExampleHomePageState extends State<ExampleHomePage>
 
   @override
   Widget build(BuildContext context) {
-    CardController controller; //Use this to trigger swap.
+    CardController? controller; //Use this to trigger swap.
 
     return new Scaffold(
       body: new Center(

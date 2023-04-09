@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_classes_with_only_static_members
+
 library flutter_tindercard;
 
 import 'dart:math';
@@ -127,11 +129,11 @@ class TinderSwapCard extends StatefulWidget {
 
 class _TinderSwapCardState extends State<TinderSwapCard>
     with TickerProviderStateMixin {
-   late Alignment frontCardAlign;
+  late Alignment frontCardAlign;
 
-   late AnimationController _animationController;
+  late AnimationController _animationController;
 
-   late int _currentFront;
+  late int _currentFront;
 
   static TriggerDirection? _trigger;
 

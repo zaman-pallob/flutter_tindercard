@@ -70,7 +70,6 @@ class _AsyncDataExampleHomePageState extends State<AsyncDataExampleHomePage>
                   case ConnectionState.none:
                     return Text('Add image');
                   case ConnectionState.waiting:
-                  // TODO: Handle this case.
                   case ConnectionState.active:
                     return _asyncDataExample(
                       context,
@@ -100,7 +99,7 @@ class _AsyncDataExampleHomePageState extends State<AsyncDataExampleHomePage>
 
   Widget _asyncDataExample(
       BuildContext context, List<String> imageList, Function onSwipe) {
-    CardController controller; //Use this to trigger swap.
+//Use this to trigger swap.
 
     return Center(
       child: Container(
@@ -117,7 +116,6 @@ class _AsyncDataExampleHomePageState extends State<AsyncDataExampleHomePage>
           cardBuilder: (context, index) => Card(
             child: Image.asset('${imageList[index]}'),
           ),
-          cardController: controller = CardController(),
           swipeUpdateCallback: (DragUpdateDetails details, Alignment align) {
             /// Get swiping card's alignment
             if (align.x < 0) {
